@@ -5,7 +5,9 @@ import './index.css';
 // examples
 import SortableBarChart from './sortableBarChart/sortableBarChart';
 import BasicExample from './basicExamples/basicExample';
-import ArcPadding from './arcPadding-I/arcPadding';
+// import ArcPadding from './arcPadding-I/arcPadding';
+// import ArcPadding from './arcPadding-II/arcPadding';
+import ArcPadding from './arcPadding-III/arcPadding';
 
 import * as serviceWorker from './serviceWorker';
 
