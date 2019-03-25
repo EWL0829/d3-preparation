@@ -1,0 +1,11 @@
+.paths--straight {
+    fill: none;
+    stroke: #777;
+}
+
+.paths--round {
+    fill: #ccc;
+    stroke: #000;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+}

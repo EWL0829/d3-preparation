@@ -1,0 +1,11 @@
+path {
+    stroke: #333;
+    stroke-width: 1.5px;
+    transition: fill 250ms linear;
+    transition-delay: 150ms;
+}
+
+path:hover {
+    stroke: #000;
+    transition-delay: 0;
+}
