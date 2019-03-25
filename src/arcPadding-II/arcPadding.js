@@ -9,7 +9,7 @@ class ArcPadding extends Component {
     this.state = {
       width: 960,
       height: 500,
-      data: [1, 1, 2, 3, 5, 8, 13]
+      data: [1, 1, 2, 3, 5, 8, 13],
     };
   }
 
@@ -21,7 +21,8 @@ class ArcPadding extends Component {
 
     let arc = d3.arc()
         .innerRadius(innerRadius)
-        .outerRadius(outerRadius);
+        .outerRadius(outerRadius)
+        .cornerRadius(12);
 
     let svg = d3.select('svg')
         .attr('width', width)
@@ -35,21 +36,24 @@ class ArcPadding extends Component {
         .append('path')
         .style('fill', (d, i) => {
           return d3.schemeCategory10[i];
-        });
+        })
+        .style('fill-opacity', .25);
 
     let pie = d3.pie();
 
     let ease = d3.transition().ease(),
         duration = 7500;
 
-    d3.timer((elapsed) => {
+    let timerId = d3.timer((elapsed) => {
       var t = ease(1 - Math.abs((elapsed % duration) / duration - .5) * 2);
 
-      path
-          .data(pie.padAngle(t * 2 * Math.PI / data.length)(data))
+      path.data(pie.padAngle(t * 2 * Math.PI / data.length)(data))
           .attr("d", arc);
-    });
 
+      if (elapsed >= 7500) {
+        timerId.stop();
+      }
+    });
 
 
   }

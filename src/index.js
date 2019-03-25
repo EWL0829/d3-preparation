@@ -7,12 +7,14 @@ import SortableBarChart from './sortableBarChart/sortableBarChart';
 import BasicExample from './basicExamples/basicExample';
 // import ArcPadding from './arcPadding-I/arcPadding';
 // import ArcPadding from './arcPadding-II/arcPadding';
-import ArcPadding from './arcPadding-III/arcPadding';
+// import ArcPadding from './arcPadding-III/arcPadding';
+// import ArcPadding from './arcPadding-IV/arcPadding';
+import ExtendingArc from './extendingArc/extendingArc';
 
 import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(<SortableBarChart />, document.getElementById('root'));
-ReactDOM.render(<ArcPadding />, document.getElementById('root'));
+ReactDOM.render(<ExtendingArc />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
