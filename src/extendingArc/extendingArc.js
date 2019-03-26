@@ -56,6 +56,7 @@ class ExtendingArc extends Component {
         d3.select(this)
             .transition()
             .delay(delay)
+            .ease(d3.easeBounce)
             .attrTween("d", (d) => {
               var i = d3.interpolate(d.outerRadius, outerRadius);
               return (t) => {
