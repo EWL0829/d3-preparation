@@ -9,6 +9,7 @@ import ArcPaddingIII from './arcPadding-III/arcPadding';
 import ArcPaddingIV from './arcPadding-IV/arcPadding';
 import ExtendingArc from './extendingArc/extendingArc';
 import GroupedBar from './groupedBar/groupedBar';
+import Loading from './loadingIcon/loadingIcon';
 import Home from './home/index';
 
 class App extends Component {
@@ -48,6 +49,9 @@ class App extends Component {
                 <li className='list-item list-body'>
                   <Link to="/SortableBarChart">排序柱状图</Link>
                 </li>
+                <li className='list-item list-body'>
+                  <Link to="/Loading">加载icon</Link>
+                </li>
               </ul>
 
             </div>
@@ -61,6 +65,7 @@ class App extends Component {
               <Route path="/ExtendingArc" component={ExtendingArc}/>
               <Route path="/GroupedBar" component={GroupedBar}/>
               <Route path="/SortableBarChart" component={SortableBarChart}/>
+              <Route path="/Loading" component={Loading}/>
             </div>
           </div>
         </Router>

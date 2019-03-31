@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './sortableBarChart.css';
 import * as d3 from 'd3';
+import Loading from '../loadingIcon/loadingIcon';
 
 class SortableBarChart extends Component {
   constructor(props) {
@@ -180,6 +181,9 @@ class SortableBarChart extends Component {
   }
 
   render() {
+    const { data } = this.state;
+    const length = data.length;
+
     return (
         <div className="App" id="svgBox">
           <div id="select">
@@ -189,7 +193,9 @@ class SortableBarChart extends Component {
               <option value="value-descending">value-descending</option>
             </select>
           </div>
-          <svg id="svgWrap"></svg>
+          {
+            length <= 0 ? <Loading/> : <svg id="svgWrap"></svg>
+          }
         </div>
     );
   }
