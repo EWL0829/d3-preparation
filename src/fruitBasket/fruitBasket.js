@@ -44,6 +44,7 @@ export default class FruitBasket extends Component {
         .enter()
         .append('circle')
         .attr('fill', 'green')
+        .merge(this.apples)
         .attr('cx', (d, i) => i * 100 + 40)
         .attr('cy', 250)
         .attr('r', 40);
