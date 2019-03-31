@@ -10,6 +10,7 @@ import ArcPaddingIV from './arcPadding-IV/arcPadding';
 import ExtendingArc from './extendingArc/extendingArc';
 import GroupedBar from './groupedBar/groupedBar';
 import Loading from './loadingIcon/loadingIcon';
+import FruitBasket from './fruitBasket/fruitBasket';
 import Home from './home/index';
 
 class App extends Component {
@@ -52,6 +53,9 @@ class App extends Component {
                 <li className='list-item list-body'>
                   <Link to="/Loading">加载icon</Link>
                 </li>
+                <li className='list-item list-body'>
+                  <Link to="/FruitBasket">水果篮</Link>
+                </li>
               </ul>
 
             </div>
@@ -66,6 +70,7 @@ class App extends Component {
               <Route path="/GroupedBar" component={GroupedBar}/>
               <Route path="/SortableBarChart" component={SortableBarChart}/>
               <Route path="/Loading" component={Loading}/>
+              <Route path="/FruitBasket" component={FruitBasket}/>
             </div>
           </div>
         </Router>
