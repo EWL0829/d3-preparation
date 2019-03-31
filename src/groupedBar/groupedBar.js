@@ -31,7 +31,7 @@ class GroupedBar extends Component {
         .map(() => {
           return d3.range(samplesCount).map(Math.random);
         });
-    console.log('data', data);
+
     // y比例尺
     let yScale = d3.scaleLinear()
         .domain([0, 1])
