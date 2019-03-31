@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import * as d3 from 'd3';
 import './arcPadding.css';
 
-class ArcPadding extends Component {
+class ArcPaddingIV extends Component {
   constructor(props) {
     super(props);
 
@@ -73,4 +73,4 @@ class ArcPadding extends Component {
   }
 }
 
-export default ArcPadding;
+export default ArcPaddingIV;
