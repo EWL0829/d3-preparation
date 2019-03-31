@@ -49,7 +49,7 @@ export default class Loading extends Component {
         .attr('width', width)
         .attr('height', height);
 
-    let circle = svg.selectAll('circle')
+    svg.selectAll('circle')
         .data(data)
         .enter()
         .append('circle')
