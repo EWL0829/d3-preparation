@@ -39,7 +39,10 @@ class SortableBarChart extends Component {
     const { width, height, margin } = this.state;
 
     // 创建x比例尺
-    let x = d3.scaleBand().domain(data.map(d => d.name)).range([margin.left, width - margin.right]).padding(0.1);
+    let x = d3.scaleBand()
+        .domain(data.map(d => d.name))
+        .range([margin.left, width - margin.right])
+        .padding(0.1);
 
     // 创建y比例尺
     let y = d3.scaleLinear()

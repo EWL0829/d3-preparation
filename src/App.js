@@ -11,6 +11,7 @@ import ExtendingArc from './extendingArc/extendingArc';
 import GroupedBar from './groupedBar/groupedBar';
 import Loading from './loadingIcon/loadingIcon';
 import FruitBasket from './fruitBasket/fruitBasket';
+import BarChartRace from './barChartRace/barChartRace';
 import Home from './home/index';
 
 class App extends Component {
@@ -56,6 +57,9 @@ class App extends Component {
                 <li className='list-item list-body'>
                   <Link to="/FruitBasket">水果篮</Link>
                 </li>
+                <li className='list-item list-body'>
+                  <Link to="/BarChartRace">race柱状图</Link>
+                </li>
               </ul>
 
             </div>
@@ -71,6 +75,7 @@ class App extends Component {
               <Route path="/SortableBarChart" component={SortableBarChart}/>
               <Route path="/Loading" component={Loading}/>
               <Route path="/FruitBasket" component={FruitBasket}/>
+              <Route path="/BarChartRace" component={BarChartRace}/>
             </div>
           </div>
         </Router>

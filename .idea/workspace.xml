@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b29b0844-89d4-4593-9fd6-72dfb2680a3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/basicLineChart/basicLineChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/liyue.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/barChartRace/barChartRace.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/barChartRace/barChartRace.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sortableBarChart/sortableBarChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sortableBarChart/sortableBarChart.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,10 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/basicLineChart/basicLineChart.js">
+        <entry file="file://$PROJECT_DIR$/src/barChartRace/barChartRace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+            <state relative-caret-position="297">
+              <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -30,10 +33,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sortableBarChart/sortableBarChart.js">
+        <entry file="file://$PROJECT_DIR$/src/barChartRace/barChartRace.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3153">
-              <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
+            <state relative-caret-position="374">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -50,9 +62,28 @@
       <find>bounce</find>
       <find>console</find>
       <find>console.log</find>
+      <find>order</find>
+      <find>barsGroup</find>
+      <find>.sort</find>
+      <find>axisLeft</find>
+      <find>attr</find>
+      <find>this.state</find>
+      <find>attrs</find>
+      <find>rendef</find>
+      <find>select</find>
+      <find>width</find>
+      <find>console.log(x(d.value) - x(0) - 1);</find>
+      <find>rect</find>
+      <find>.tick</find>
+      <find>==</find>
+      <find>text</find>
+      <find>===</find>
+      <find>d.year ==</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>attrs</replace>
+      <replace>attr</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/node_modules</dir>
@@ -76,19 +107,22 @@
         <option value="$PROJECT_DIR$/src/arcPadding-I/arcPadding.js" />
         <option value="$PROJECT_DIR$/src/arcPadding-IV/arcPadding.js" />
         <option value="$PROJECT_DIR$/src/groupedBar/groupedBar.js" />
-        <option value="$PROJECT_DIR$/src/sortableBarChart/sortableBarChart.js" />
         <option value="$PROJECT_DIR$/src/loadingIcon/loadingIcon.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/fruitBasket/fruitBasket.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/basicLineChart/basicLineChart.js" />
+        <option value="$PROJECT_DIR$/src/sortableBarChart/sortableBarChart.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/barChartRace/barChartRace.css" />
+        <option value="$PROJECT_DIR$/src/barChartRace/barChartRace.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -113,13 +147,7 @@
               <item name="d3-preparation" type="b2602c69:ProjectViewProjectNode" />
               <item name="d3-preparation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="basicLineChart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="d3-preparation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d3-preparation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sortableBarChart" type="462c0819:PsiDirectoryNode" />
+              <item name="barChartRace" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -162,15 +190,18 @@
       <workItem from="1553573820242" duration="1150000" />
       <workItem from="1554016985465" duration="1217000" />
       <workItem from="1554018239455" duration="12137000" />
-      <workItem from="1554123506378" duration="756000" />
+      <workItem from="1554123506378" duration="859000" />
+      <workItem from="1554363663849" duration="249000" />
+      <workItem from="1554719548500" duration="3010000" />
+      <workItem from="1554804203776" duration="5546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15260000" />
+    <option name="totallyTimeSpent" value="24168000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24947146" />
@@ -187,7 +218,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24578314" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38795182" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -315,26 +346,6 @@
     <entry file="file://$PROJECT_DIR$/src/fruitBasket/fruitBasket.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/loadingIcon/loadingIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -365,20 +376,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sortableBarChart/sortableBarChart.js">
+    <entry file="file://$PROJECT_DIR$/src/basicLineChart/basicLineChart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3153">
-          <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
+        <state relative-caret-position="924">
+          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/basicLineChart/basicLineChart.js">
+    <entry file="file://$PROJECT_DIR$/src/loadingIcon/loadingIcon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+        <state relative-caret-position="946">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sortableBarChart/sortableBarChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/barChartRace/barChartRace.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/barChartRace/barChartRace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
