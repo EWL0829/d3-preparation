@@ -69,8 +69,10 @@ class SortableBarChart extends Component {
         .attr('height', height + 'px')
         .classed('svg-wrap', true);
 
+
     // 添加柱状图分组
     const barsGroup = svg.append("g")
+        .classed('rect', true)
         .attr("fill", "steelblue")
         .selectAll("rect")
         .data(data)
@@ -79,7 +81,8 @@ class SortableBarChart extends Component {
         .attr("x", d => x(d.name))
         .attr("y", d => y(d.value))
         .attr("height", d => y(0) - y(d.value))
-        .attr("width", x.bandwidth());
+        .attr("width", x.bandwidth() / 3)
+        .attr('transform', `translate(${x.bandwidth() / 3}, 0)`);
 
     // 添加横坐标分组
     const gxAxis = svg.append("g")
@@ -169,10 +172,42 @@ class SortableBarChart extends Component {
         value: +frequency,
       }
     }).then(data => {
+
+      let d = [
+        {
+          name: '我',
+          value: 3119,
+        },
+        {
+          name: '红颖',
+          value: 3885,
+        },
+        {
+          name: '青青',
+          value: 3278,
+        },
+        {
+          name: '云龙',
+          value: 1190,
+        },
+        {
+          name: '粲爷',
+          value: 1046,
+        },
+        {
+          name: '徐潇',
+          value: 1302,
+        },
+        {
+          name: '辉哥',
+          value: 164,
+        },
+      ];
       // 更新数据
       this.setState({
-        data,
+        data: d,
       }, () => {
+
         this.renderChart(this.state.data);
       });
     }).catch(() => {
