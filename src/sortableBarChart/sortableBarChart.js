@@ -38,16 +38,6 @@ class SortableBarChart extends Component {
   renderChart = (data) => {
     const { width, height, margin } = this.state;
 
-    let toolTip = d3.select('#svgWrap').append('text')   	//添加tip提示框
-        .attr('class', 'd3-tip')
-        .style('opacity', 0);
-
-    let div = d3.select('body').append('div')
-        .attr('class', 'tool-tip')
-        .attr('width', 150)
-        .attr('height', 50)
-        .style('opacity', 0);
-
     // 创建x比例尺--类目轴
     let x = d3.scaleBand()
         .domain(data.map(d => d.name))

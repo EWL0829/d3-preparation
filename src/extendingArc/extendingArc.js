@@ -23,9 +23,11 @@ class ExtendingArc extends Component {
         innerRadius = outerRadius / 3,
         cornerRadius = 10;
 
+    // 使用d3中的饼状图布局，设置各个扇形之间的间距
     var pie = d3.pie()
         .padAngle(.02);
 
+    // 弧布局，创建具有内外半径的圆弧
     var arc = d3.arc()
         .padRadius(outerRadius)
         .innerRadius(innerRadius)
