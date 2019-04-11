@@ -109,6 +109,7 @@ export default class BarChartRace extends Component {
         .attr('transform', `translate(0, ${margin.top})`)
         .call(xAxis)
         .selectAll('.tick line')
+        // eslint-disable-next-line
         .classed('origin', d => d == 0);
 
     svg.selectAll('rect.bar')
@@ -163,7 +164,7 @@ export default class BarChartRace extends Component {
         .call(halo, 10);
 
     let ticker = d3.interval(e => {
-
+      // eslint-disable-next-line
       yearSlice = brandData.filter(d => d.year == year && !isNaN(d.value))
           .sort((a, b) => b.value - a.value)
           .slice(0, top_n);
@@ -281,6 +282,7 @@ export default class BarChartRace extends Component {
 
       yearText.html(~~year);
 
+      // eslint-disable-next-line
       if (year == 2018) ticker.stop();
       year = d3.format('.1f')((+year) + 0.1);
     }, tickDuration);

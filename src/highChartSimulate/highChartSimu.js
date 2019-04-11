@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component } from 'react';
 import './highChartSimu.css';
 import * as d3 from 'd3';
