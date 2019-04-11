@@ -1,0 +1,23 @@
+path.domain {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.tick line{
+    stroke: #ccc;
+}
+
+.xAxis .tick text {
+    fill: #333;
+    font-size: 14px;
+}
+
+.xAxis .tick:nth-child(2) text {
+    text-anchor: start;
+}
+
+.yearText {
+    font-size: 54px;
+    font-weight: 700;
+    fill: #ccc;
+}
