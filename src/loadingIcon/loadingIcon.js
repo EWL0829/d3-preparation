@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
+import './loadingIcon.css';
 
 export default class Loading extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      width: 500,
+      width: 300,
       height: 100,
     };
   }
@@ -39,7 +40,7 @@ export default class Loading extends Component {
             return d.val * 150
           })
           .attrTween('cx', (d) => {
-            return d3.interpolate(`${d.val * 3 + 5}%`, `${d.val * 3}%`)
+            return d3.interpolate(`${d.val * 16 + 16}%`, `${d.val * 16}%`)
           });
 
       setTimeout(() => { bounce(selection, duration); }, duration)
@@ -55,7 +56,7 @@ export default class Loading extends Component {
         .append('circle')
         .classed('circle', true)
         .attr('cx', (d) => {
-          return `${d.val * 3}%`;
+          return `${d.val * 16}%`;
         })
         .attr('cy', '50%')
         .attr('r', 3)
@@ -65,7 +66,7 @@ export default class Loading extends Component {
 
   render() {
     return (
-        <svg></svg>
+        <svg id='loading'></svg>
     )
   }
 }

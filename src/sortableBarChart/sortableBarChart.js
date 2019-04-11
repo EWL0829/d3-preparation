@@ -38,13 +38,13 @@ class SortableBarChart extends Component {
   renderChart = (data) => {
     const { width, height, margin } = this.state;
 
-    // 创建x比例尺
+    // 创建x比例尺--类目轴
     let x = d3.scaleBand()
         .domain(data.map(d => d.name))
         .range([margin.left, width - margin.right])
         .padding(0.1);
 
-    // 创建y比例尺
+    // 创建y比例尺--线性轴
     let y = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.value)])
         .nice()   // 将连续的数字转化为四舍五入的数字
@@ -162,6 +162,7 @@ class SortableBarChart extends Component {
    * @return: csv数据
    **/
   getRawData = (url) => {
+    // d3的csv方法会返回一个promise
     d3.csv(url, ({ letter, frequency }) => {
       return {
         name: letter,
@@ -196,9 +197,11 @@ class SortableBarChart extends Component {
               <option value="value-descending">value-descending</option>
             </select>
           </div>
-          {
-            length <= 0 ? <Loading/> : <svg id="svgWrap"></svg>
-          }
+          <div className="svg-wrap">
+            {
+              length <= 0 ? <Loading/> : <svg id="svgWrap"></svg>
+            }
+          </div>
         </div>
     );
   }
